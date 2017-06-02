@@ -1,0 +1,9 @@
+<div ng-repeat="x in cmgalleries" class="col-6 col-sm-3 cm-gallery-col">
+	<div class="cm-gallery-name-tile">
+		<span>{{x.gallery_name}}</span>
+	</div>
+	<div class="col-12">
+		<div class="cm-false-fill"></div>
+		<img ng-repeat="z in x.images" class="img-fluid" src="{{z}}"/>
+	</div>
+</div>

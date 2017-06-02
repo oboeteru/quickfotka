@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Quickfotka.pl</title>
+  <meta name="description" content="Quickfotka.pl">
+  <meta name="author" content="Quickfotka.pl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+  <script src="dist/js/gallery.js"></script>
+  <script src="dist/js/custom.js"></script>
+  
+  
+</head>
+
+	
+<body id="gallery-body" ng-app="plunker">
+	<div id="cm-gallery-nav">
+		<a onclick="cmGoBack()">&#8592;</a>
+	</div>
+	<div ng-controller="CmGalleries" class="row" style="margin: 0; background: linear-gradient(#282828, #727272, #282828)">
+		
+		
+		
+		<div class="col-md-8">
+			<div class="row" style="margin: 0">
+				<galleries></galleries>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-4" id="cm-gallery-side-panel">
+			
+			<div style="font-size: 2rem; font-variant: small-caps">Quickfotka</div>
+			<div style="margin-bottom: 40px">
+				<p>dla entropia wszechświata<p>
+			</div>
+			<div  id="cm-img-cont">
+				<img class="img-fluid" src="dist/img/gallery/photobooth.png"/>
+			</div>
+			<div class="btn-group-vertical cm-galerie">
+				<ul>
+					<a ng-repeat="x in cmgalleries" href="{{x.link}}">
+						<li>{{x.gallery_name}} &#8681;</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<div id="cm-gallery-footer">
+		<div class="col-md-4 push-md-8"><a href="index.html">Quickfotka.pl</a></div>
+		<div class="col-md-4 push-md-8">Wszystkie prawa zastrzeżone: &#169; 2017 Jakub Pietrzyk</div>
+	</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

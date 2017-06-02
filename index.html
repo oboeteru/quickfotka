@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Quickfotka.pl</title>
+  <meta name="description" content="Quickfotka.pl">
+  <meta name="author" content="Quickfotka.pl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="dist/js/custom.js"></script>
+
+
+</head>
+
+<body>
+	<div>
+		<img class="img-fluid" src="dist/img/0.png">
+		<img class="cm-abs" id="cm-logo" src="dist/img/camera.png">
+		<div class="cm-abs" id="cm-fotobudka">quickfotka
+			<div id="cm-jakub-pietrzyk">Jakub Pietrzyk</div>
+		</div>
+		
+	</div>
+	<div class="row cm-tile-main" style="position: relative">
+		<div class="col-xs-12 col-md-6 cm-empty-tile">
+			<img class="img-fluid" src="dist/img/3.png" style="visibility:hidden">
+			<a href="oferta.html">
+				<div class="cm-hover-bck cm-abs"></div>
+			</a>
+			<div class="cm-colors cm-abs"></div>
+			<div class="cm-tile-text cm-abs">oferta
+				<div class="cm-small-text">Lorem ipsum soemthing</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 cm-empty-tile">
+			<img class="img-fluid" src="dist/img/3.png">
+			<a href="cennik.html">
+				<div class="cm-hover-bck cm-abs"></div>
+			</a>
+			<div class="cm-colors cm-abs" id="cm-color-2"></div>
+			<div class="cm-tile-text cm-abs">cennik
+				<div class="cm-small-text">Lorem ipsum soemthing</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 cm-empty-tile">
+			<img class="img-fluid" src="dist/img/2.png">
+			<a href="jaktodziala.html">
+				<div class="cm-hover-bck cm-abs"></div>
+			</a>
+			<div class="cm-colors cm-abs" id="cm-color-3"></div>
+			<div class="cm-tile-text cm-abs">jak to działa?
+				<div class="cm-small-text">Lorem ipsum soemthing</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 cm-empty-tile" style="visibility: hidden">
+			<img class="img-fluid" src="dist/img/4.png">				<div class="cm-hover-bck cm-abs"></div>
+			<div class="cm-colors cm-abs" id="cm-color-4"></div>
+			<div class="cm-tile-text cm-abs">pobierz zdjęcia
+				<div class="cm-small-text">Lorem ipsum soemthing</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 cm-empty-tile" id="cm-click-enlarge">
+			<div style=""  onclick="clicker()">	
+				<img class="img-fluid" src="dist/img/4.png">			<div class="cm-hover-bck cm-abs"></div>
+				<div class="cm-colors cm-abs" id="cm-color-4"></div>
+				<div class="cm-tile-text cm-abs">pobierz zdjęcia
+					<div class="cm-small-text">Lorem ipsum soemthing</div>
+				</div>
+			</div>
+			
+			<div class="cm-form">
+				<img/>
+				<div class="cm-log-pass">
+					<div class="cm-log">
+						<input type="text" name="login" placeholder="login"></input>
+					</div>
+					<div class="cm-pass">
+						<input type="password" name="password" placeholder="hasło"></input>
+					</div>
+				</div>
+				<a href="gallery.html" class="btn btn-success"><span>Zaloguj się</span></a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<img class="img-fluid" src="dist/img/footer.png">
+		<div class="container cm-abs">
+			<div class="row">
+				<div class="col-6 col-md-4 offset-md-2">
+					<div class="cm-tile-text">
+						<div>
+							Kontakt
+						</div>
+						<div class="cm-small-text">
+							<div style="text-align: left; display:inline-block">
+								kom. +0 123 456 789<br><a href="mailto:jakubpiietrzyk@gmail.com">jakubpiietrzyk@gmail.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-4">
+					<div class="cm-tile-text">
+						<div>
+							Quickfotka w sieci
+						</div>
+						<ul>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 cm-abs col-md-8 offset-md-2" id="cm-flexout">Wszystkie prawa zastrzeżone: &#169; 2017 Jakub Pietrzyk</div>
+	</footer>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
